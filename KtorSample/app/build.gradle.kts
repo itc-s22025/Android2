@@ -1,15 +1,14 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
 }
 
 android {
-    namespace = "jp.ac.it_college.std.s22025.asyncsample"
+    namespace = "jp.ac.it_college.std.s22025.ktorsample"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "jp.ac.it_college.std.s22025.asyncsample"
+        applicationId = "jp.ac.it_college.std.s22025.ktorsample"
         minSdk = 29
         targetSdk = 33
         versionCode = 1
@@ -34,11 +33,6 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-
-    buildFeatures {
-        viewBinding = true
-        buildConfig = true
-    }
 }
 
 dependencies {
@@ -47,8 +41,6 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")

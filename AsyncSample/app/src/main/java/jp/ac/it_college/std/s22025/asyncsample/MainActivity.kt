@@ -45,7 +45,6 @@ class MainActivity : AppCompatActivity() {
         val backgroundReceiver = WeatherInfoBackgroundReceiver(url)
         val future = executorService.submit(backgroundReceiver)
         val result = future.get()
-//        binding.tvWeatherDesc.text = result
         showWeatherInfo(result)
     }
 
