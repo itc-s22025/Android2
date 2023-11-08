@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f040eaf4-dd67-4582-9c61-201a6d363d36" name="Changes" comment="" />
+    <list default="true" id="f040eaf4-dd67-4582-9c61-201a6d363d36" name="Changes" comment="なんかわからん" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,6 +77,9 @@
     "RunOnceActivity.cidr.known.project.marker": "true",
     "cidr.known.project.marker": "true",
     "last_opened_file_path": "/home/s22025/AndroidStudioProjects/Android2/PokeApiPre",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "AndroidSdkUpdater"
   }
 }]]></component>
@@ -157,6 +160,18 @@
       <option name="presentableId" value="Default" />
       <updated>1698714488794</updated>
     </task>
+    <task id="LOCAL-00001" summary="なんかわからん">
+      <created>1699327646980</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699327646981</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="なんかわからん" />
+    <option name="LAST_COMMIT_MESSAGE" value="なんかわからん" />
   </component>
 </project>
