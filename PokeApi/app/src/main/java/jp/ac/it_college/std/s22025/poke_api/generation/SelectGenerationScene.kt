@@ -23,6 +23,7 @@ fun SelectGenerationScene(modifier: Modifier = Modifier){
         LazyColumn(modifier.fillMaxWidth()){
             //itemsないと表示されなかった？かも
             //count = 2になると同じのが複数できる
+            //今は第９世代のみ 将来的に全世代を表示して選択可能にしたい
             items(count = 1) {
                 ItemGeneration(generation = 9, seriesName = "スカーレット/バイオレット")
             }
@@ -30,7 +31,7 @@ fun SelectGenerationScene(modifier: Modifier = Modifier){
     }
 }
 
-//世代: Int, シリーズ名: Stringで作成
+//ポケモンの世代とシリーズ名をだすやつ 世代: Int, シリーズ名: Stringで作成
 @Composable
 fun ItemGeneration(generation: Int, seriesName: String){
     Surface (
@@ -43,9 +44,10 @@ fun ItemGeneration(generation: Int, seriesName: String){
             modifier = Modifier
                 .padding(8.dp)
         ) {
-            //文字列リソースのgenerationを渡す
+            //文字列リソースのgenerationを渡す 第?世代
             Text(text = stringResource(id = R.string.generation, generation),
                 style = MaterialTheme.typography.titleLarge)
+            //シリーズ名
             Text(text = seriesName,
                 style = MaterialTheme.typography.titleMedium)
         }
